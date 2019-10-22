@@ -5,9 +5,20 @@
 
 1. **Given a String, return a String with each letter uppercased**
 
+let str = [Hello, there ]
+return str.uppercased
 Input: `Hello, there`
 
 Output: `HELLO, THERE`
+
+var words = "Hello, there"
+words = words.replacingOccurrences(of: "Hello, there" , with: "HELLO, THERE")
+print(words)
+or 
+var words = "Hello, there"
+var newWord = words.uppercased()
+print(newWord)
+
 
 2. **Given a String, return a String alternating between uppercase and lowercase letters**
 
@@ -23,6 +34,9 @@ Input: `Hello, there`
 
 Output: `Hllo, thr`
 
+var words = "Hello, there"
+var newwords = words.replacingOccurrences(of: "e", with: "")
+print(newwords)
 
 ## Arrays
 
